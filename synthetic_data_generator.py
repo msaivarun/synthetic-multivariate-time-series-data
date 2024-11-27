@@ -6,7 +6,7 @@ import random
 from datetime import datetime, timedelta
 
 # Step 1: Collect Real-Time System Metrics
-def collect_real_time_data(duration_minutes=2, sampling_rate_hz=2):
+def collect_real_time_data(duration_minutes=1440, sampling_rate_hz=2):
     """
     Collect real-time system metrics using wmi and psutil.
     """
@@ -115,7 +115,7 @@ def visualize_anomalies(df, metrics, anomaly_flags):
 if __name__ == "__main__":
     # Step 1: Collect Real-Time Data
     print("Collecting real-time system metrics...")
-    df = collect_real_time_data(duration_minutes=5, sampling_rate_hz=2)  # Adjust duration and sampling rate as needed
+    df = collect_real_time_data(duration_minutes=1440, sampling_rate_hz=2)  # Adjust duration and sampling rate as needed
 
     # Step 2: Anomaly Detection
     metrics = ["cpu_temperature", "cpu_usage", "cpu_load", "memory_usage", "cpu_power"]
