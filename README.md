@@ -1,4 +1,4 @@
-System Metrics Monitoring and Anomaly Detection
+**System Metrics Monitoring and Anomaly Detection**
 This project collects real-time system metrics using the Open Hardware Monitor (OHM) and Python libraries such as wmi and psutil. It detects anomalies in the system's behavior (e.g., CPU temperature, usage, memory, and power) and visualizes the anomalies with graphs.
 
 Features
